@@ -1,0 +1,36 @@
+  using System;
+
+public class operacoes
+{
+    public void Linha()
+    {
+        Console.WriteLine("------------------------------------------------------\n------------------------------------------------------");
+    }
+
+    public void Escolha()
+    {
+        double saldo = 0;
+
+        int escolha = int.Parse(Console.ReadLine());
+
+        switch (escolha)
+        {
+            case 1: Console.WriteLine("Opção escolhida: Depósito");
+                Linha();
+                Deposito();
+                Escolha();
+                break;
+
+            case 2: Console.WriteLine("kdakjkjda");
+                break;
+
+            case 3: Console.WriteLine("kladjkadkj");
+                break;
+
+            case 4: Console.WriteLine("Aperte enter para sair");
+                break;
+        }
+    }
+
+
+}
