@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Caixa_eletronico
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            operacoes operacoes = new operacoes();
+
+
+            operacoes.Linha();
+            Console.WriteLine("------------------ Caixa Eletronico ------------------");
+            operacoes.Linha();
+            Console.WriteLine("Digite a função desejada: \n1 - Depósito\n2 - Saque\n3 - Saldo\n4 - Sair");
+            operacoes.Linha();
+            
+            operacoes.Escolha();
+
+            Console.ReadLine();
+        }
+    }
+}
