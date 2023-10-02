@@ -15,9 +15,12 @@ namespace Caixa_eletronico
 
             operacoes.Linha();
             Console.WriteLine("------------------ Caixa Eletronico ------------------");
+            
+            /*
             operacoes.Linha();
-            Console.WriteLine("Digite a função desejada: \n1 - Depósito\n2 - Saque\n3 - Saldo\n4 - Sair");
+            operacoes.Menu();
             operacoes.Linha();
+            */
             
             operacoes.Escolha();
 
