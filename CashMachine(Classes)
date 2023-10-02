@@ -1,4 +1,4 @@
-  using System;
+using System;
 
 public class operacoes
 {
@@ -7,17 +7,44 @@ public class operacoes
         Console.WriteLine("------------------------------------------------------\n------------------------------------------------------");
     }
 
+    public void Menu()
+    {
+        Console.WriteLine("Digite a função desejada: \n1 - Depósito\n2 - Saque\n3 - Saldo\n4 - Sair");
+    }
+
+    public double Deposito(double saldo)
+    {
+        Console.WriteLine("TESTE DEPÓSITO");
+        Console.WriteLine("Qual o valor que deseja depositar:");
+        double deposito = double.Parse(Console.ReadLine());
+        saldo += deposito;
+        Console.WriteLine("Saldo atual = " + saldo);
+        return saldo;
+    }
+
     public void Escolha()
     {
         double saldo = 0;
 
+        Linha();
+        Menu();
+        Linha();
+
         int escolha = int.Parse(Console.ReadLine());
 
+        while(escolha < 0 || escolha > 4) 
+        {
+            Console.WriteLine("Numero Inválido, por favor digite novamente:");
+            escolha = int.Parse(Console.ReadLine());
+        }
+
         switch (escolha)
+
         {
             case 1: Console.WriteLine("Opção escolhida: Depósito");
                 Linha();
-                Deposito();
+                saldo = Deposito(saldo);
+                Console.WriteLine("Saldo atual: " + saldo);
                 Escolha();
                 break;
 
@@ -34,3 +61,4 @@ public class operacoes
 
 
 }
+
