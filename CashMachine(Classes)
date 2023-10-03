@@ -22,6 +22,11 @@ public class operacoes
         return saldo;
     }
 
+    public double Saque(double saldo)
+    {
+        return saldo;
+    }
+
     public void Escolha()
     {
         double saldo = 0;
@@ -45,10 +50,13 @@ public class operacoes
                 Linha();
                 saldo = Deposito(saldo);
                 Console.WriteLine("Saldo atual: " + saldo);
-                Escolha();
+                Console.WriteLine("Operação realizada com sucesso!");
+                //Escolha();
                 break;
 
-            case 2: Console.WriteLine("kdakjkjda");
+            case 2: Console.WriteLine("Opção escolhida: Saque");
+                Linha();
+                saldo = Saque(saldo);
                 break;
 
             case 3: Console.WriteLine("kladjkadkj");
@@ -61,4 +69,3 @@ public class operacoes
 
 
 }
-
