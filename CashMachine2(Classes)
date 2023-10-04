@@ -1,1 +1,28 @@
 using System;
+
+public class operations
+{
+    public double Escolha(double saldo)
+    {
+        switch (saldo)
+        {
+            case 1: //Depósito
+                Console.WriteLine("Operação escolhida: Depósito");
+                Console.Read();
+                break;
+
+            case 2: //Saque
+                Console.WriteLine("Operação escolhida: Saque");
+                break;
+
+            case 3: //Saldo
+                Console.WriteLine("Operação escolhida: Saldo");
+                break;
+
+            default:
+                Console.WriteLine("Número incompatível, digite novamente:");
+                break;
+        }
+        return saldo;
+    }
+}
