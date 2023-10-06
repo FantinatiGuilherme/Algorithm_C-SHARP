@@ -13,7 +13,7 @@ namespace Caixa_eletronico
             operacoes operacoes = new operacoes();
 
 
-            operacoes.Linha();
+            operacoes.Linha();  
             Console.WriteLine("------------------ Caixa Eletronico ------------------");
             
             /*
