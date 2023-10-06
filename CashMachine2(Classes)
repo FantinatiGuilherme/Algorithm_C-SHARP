@@ -6,7 +6,7 @@ public class operations
     {
         switch (saldo)
         {
-            case 1: //Depósito
+            case 1: //Depósito. 
                 Console.WriteLine("Operação escolhida: Depósito");
                 Console.Read();
                 break;
