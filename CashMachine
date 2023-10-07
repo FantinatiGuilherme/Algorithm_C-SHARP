@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//codigo embolou, mas tem uma boa chamada de funções como exemplo
+
+
 namespace Caixa_eletronico
 {
     internal class Program
