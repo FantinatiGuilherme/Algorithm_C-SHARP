@@ -1,5 +1,8 @@
 using System;
 
+//chamada de funções, muito bom para utilizar como exemplo
+
+
 public class operacoes
 {
     public void Linha()
