@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//main do repositorio novo do codigo que ficou longo de caixa bancario
+
 namespace MoneyMachine2
 {
     internal class Program
