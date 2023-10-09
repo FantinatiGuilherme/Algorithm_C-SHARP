@@ -7,7 +7,8 @@ public class Task
         double x = double.Parse(Console.ReadLine());
 
         return x;
-    }
+    }  
+
 
     public bool formacao(double x, double y, double z)
     {
